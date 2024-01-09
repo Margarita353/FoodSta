@@ -1,0 +1,228 @@
+.hide {
+    display: none;
+}
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  background-color: #fefefe;
+}
+
+.container {
+  width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* ************************************************************************HEADER ***************************************************************************************/
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    display: inline-flex;
+    margin: 10px 735px 10px 16px;
+    max-width: 66px;
+    height: 52px;
+}
+.header-list {
+    display: flex;
+}
+.header-item {
+    margin-right: 28px;
+}
+.header-item:last-child {
+    margin-right: 30px;
+}
+.header-list-link {
+    position: relative;
+    display: block;
+    padding: 28px 0;
+
+
+    color: var(--Black, #2C2C2C);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+.current {
+    position: relative;
+    color: #bbf330;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+.header-btn {
+    display: block;
+    margin: 0 auto;
+    min-width: 98px;
+    height: 32px;
+
+    border-radius: 30px;
+    border: none;
+    background: var(--Button-green, #BBF330);
+    cursor: pointer;
+
+    color: var(--Black, #2C2C2C);
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* ************************************************************************MODAL*****************************************************************************************/
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  border-color: rgba(94, 99, 99, 0.7);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px;
+
+  width: 458px;
+  height: 449px;
+  flex-shrink: 0;
+
+  border-radius: 30px;
+  background: #ffe550;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+}
+is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  /* RESET BY DEFOLT */
+  padding: 0;
+  line-height: 0;
+
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: transparent;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+  cursor: pointer;
+}
+.modal-form {
+}
+.modal-title {
+  margin-bottom: 20px;
+
+  color: var(--Black, #2c2c2c);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.modal-field {
+  margin-bottom: 24px;
+}
+.modal-label {
+  /* by defolt-inline */
+  display: block;
+  margin-bottom: 2px;
+  margin-right: 12px;
+
+  color: var(--Black, #2c2c2c);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.modal-input {
+  width: 100%;
+  height: 48px;
+  outline: transparent;
+  padding-left: 12px;
+
+  border-radius: 30px;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+}
+.modal-input:focus {
+  border-color: #7eb101;
+}
+.modal-send-btn {
+  margin: 0 auto;
+  display: block;
+  min-width: 106px;
+  height: 40px;
+
+  border-radius: 30px;
+  border: 2px solid var(--Dark-green, #7eb101);
+  background-color: #fff;
+  cursor: pointer;
+
+  color: var(--Black, #2c2c2c);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+  background-color: var(--Button-green, #bbf330);
+}
+
+
+/*********************************************************************** MOBILE MENU*************************************************************************************** */
+.menu-btn-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: inherit;
+}
+.mobail-btn-icon {
+}
+.mobail-menu-list {
+}
+.mobail-menu-item {
+}
+.mobail-menu-link {
+}

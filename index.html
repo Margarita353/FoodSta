@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodSta</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a href="./index.html" class="header-logo">
+                    <img src="./images/Vector (2).svg" alt="logo" width="66" height="52">
+                </a>
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a class="header-list-link current" href="./index.html">Home</a></li>
+                        <li class="header-item">
+                            <a class="header-list-link" href="">About</a></li>
+                        <li class="header-item">
+                            <a class="header-list-link" href="">Service</a></li>
+                        <li class="header-item">
+                            <a class="header-list-link" href="">Menu</a></li>
+                        <li class="header-item">
+                            <a class="header-list-link" href="">Contact</a></li>
+                    </ul>
+                    <button class="header-btn" type="button">Order Now</button>
+                    <button class="menu-btn-burger" type="button" aria-label="Open menu button">
+                        <svg class="menu-btn-burger-icon" width="28" height="28">
+                            <use href="./icons/symbol-defs.svg#icon-gg_menu"></use>
+                        </svg>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <!-- MODAL  -->
+    <!-- .backdrop>.modal>button+form-modal>p.modal-title+div.modal-field*3>label.modal-label+input.modal-input^button.modal-send-btn -->
+
+    <div class="backdrop is-hidden hide" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" type="button" data-modal-close>
+                X
+            </button>
+            <form action="" class="modal-form">
+                <p class="modal-title">Order Form</p>
+                <div class="modal-field">
+                    <label for="user-name" class="modal-label">Name</label>
+                    <input id="user-name" name="user-name" type="text" class="modal-input" placeholder="Your name" />
+                </div>
+                <div class="modal-field">
+                    <label for="user-phone" class="modal-label">Phone number</label>
+                    <input id="user-phone" name="user-phone" type="tel" class="modal-input"
+                        placeholder="+38(0_ _) _ _ _   _ _   _ _" />
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-label">E-mail</label>
+                    <input id="user-email" name="user-email" type="email" class="modal-input"
+                        placeholder="example@gmail.com" />
+                </div>
+
+                <button class="modal-send-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
+
+    <!-- MOBAIL MENU -->
+    <div class="mobile-menu">
+        <button type="button"></button>
+            <svg class="mobail-btn-icon" width="24" height="24">
+                <use href="./icons/symbol-defs.svg#icon-Frame-17"></use>
+            </svg>
+        </button>
+            <ul class="mobail-menu-list">
+                <li class="mobail-menu-item">
+                    <a href="" class="mobail-menu-link">Home</a></li>
+                <li class="mobail-menu-item">
+                    <a href="" class="mobail-menu-link">About</a></li>
+                <li class="mobail-menu-item">
+                    <a href="" class="mobail-menu-link">Service</a></li>
+                <li class="mobail-menu-item">
+                    <a href="" class="mobail-menu-link">Menu</a></li>
+                <li class="mobail-menu-item">
+                    <a href="" class="mobail-menu-link">Contact</a></li>
+            </ul>
+    </div>
+
+
+</body>
+
+</html>
